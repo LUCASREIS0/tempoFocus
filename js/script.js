@@ -90,8 +90,15 @@ const contagemRegressiva = () => {
     // Verifica se o tempo decorrido atingiu zero ou menos
     if (tempoDecorridoEmSegundos <= 0) {
         somFinal.play();
-        zerar(); // Chama a função para parar a contagem regressiva
         alert('Tempo finalizado!');
+
+        const focoAtivo = html.getAttribute('data-contexto') == 'foco'
+        if (focoAtivo) {
+            const evento = new CustomEvent('FocoFinalizado')
+            document.dispatchEvent(evento)
+        }
+        
+        zerar(); // Chama a função para parar a contagem regressiva
         return; // Retorna da função, encerrando a execução prematuramente
     }
     tempoDecorridoEmSegundos -= 1; // Decrementa o tempo decorrido em um segundo

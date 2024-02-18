@@ -1,0 +1,164 @@
+/* Definição de fonte para todo o documento */
+#modal {
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+#modal h1{
+    font-size: 32px;
+}
+
+#modal h2{
+    font-size: 24px;
+}
+
+#modal p{
+    font-family: Helvetica
+    gap: 4px;
+}
+
+/* Espaçamento no corpo do documento */
+body#modal {
+    padding: 0.5rem; /* Reduzindo o espaçamento do corpo do documento */
+}
+
+/* Espaçamento para o título */
+#modal#modal-title, #modal#modal-subtitle {
+    margin-bottom: 21.5px;
+}
+
+/* Estilo dos botões */
+#close-modal {
+    padding: 0.6rem 1.2rem;
+    background-color: #888; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Removendo borda do botão */
+    border-radius: 0.25rem; /* Arredondando bordas do botão */
+    cursor: pointer;
+    opacity: 0.9; /* Opacidade do botão */
+    font-size: 2rem;
+}
+
+/* Estilo específico para o botão de fechar o modal */
+#close-modal {
+    background-color: rgb(0, 123, 255); /* Cor de fundo específica para botão de fechar modal */
+}
+
+/* Efeito de hover nos botões */
+close-modal:hover {
+    opacity: 1; /* Aumentando a opacidade ao passar o mouse sobre o botão */
+}
+
+/* Estilo do fundo escuro que cobre a tela ao abrir o modal */
+#fade {
+    position: fixed; /* Posicionamento fixo para cobrir toda a tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 0, 54, 0.548); /* Cor de fundo do fundo escuro */
+    z-index: 5; /* Z-index para garantir que esteja sobre todos os outros elementos, exceto o modal */
+}
+
+/* Estilo do modal em si */
+#modal {
+    position: fixed; /* Posicionamento fixo para centralizar */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centralizando verticalmente e horizontalmente */
+    width: 700px; /* Largura fixa do modal */
+    max-width: 80%; /* Largura máxima para adaptabilidade */
+    background-color: #fff; /* Cor de fundo do modal */
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 10; /* Z-index superior ao fundo escuro */
+}
+
+/* Estilo dos parágrafos dentro do modal */
+#modal p {
+    width: 100%; /* Garantindo que os parágrafos tenham largura total */
+}
+
+/* Transições suaves para o modal e fundo escuro */
+#fade, #modal {
+    transition: 0.5s; /* Transições suaves */
+    opacity: 1; /* Opacidade inicial */
+    pointer-events: all; /* Permitindo interações com o modal */
+}
+
+/* Estilo do cabeçalho do modal */
+.modal-header {
+    align-items: center; /* Alinhamento dos itens do cabeçalho */
+    border-bottom: 0.5px solid  rgb(0, 123, 255); /* Borda inferior do cabeçalho */
+    margin-bottom: 0.5rem; /* Espaçamento inferior */
+}
+
+/* Estilo dos parágrafos dentro do corpo do modal */
+.modal-body #modal-paragraph-1, .modal-body #modal-paragraph-2, .modal-body #modal-paragraph-3, .modal-body #modal-paragraph-4, .modal-body #modal-paragraph-5 {
+    margin-left: auto; /* Alinhar parágrafos à direita */
+}
+
+/* Esconder o modal e o fundo escuro */
+#modal.esconder, #fade.esconder {
+    opacity: 0; /* Esconder com opacidade 0 */
+    pointer-events: none; /* Desativar interações */
+}
+
+/* Posição do modal quando estiver escondido */
+#modal.esconder {
+    top: 0; /* Posição no topo */
+}
+
+/* Estilo do botão para fechar o modal */
+#close-modal {
+    display: flex; /* Exibir como flexbox */
+    justify-content: center; /* Centralizar horizontalmente */
+    margin: 0.6rem auto 0; /* Espaçamento vertical e centralização */
+    width: 100%; /* Largura total */
+}
+
+/* Estilo dos cards */
+.cards {
+    display: flex; /* Exibir como flexbox */
+    flex-direction: column; /* Organização em coluna */
+    align-items: stretch; /* Estender para preencher a largura do modal */
+}
+
+/* Estilo de cada card */
+.card {
+    padding: 1rem 0rem; /* Espaçamento interno */
+    margin: 0px;
+    box-shadow: 0px 5px 5px 0 rgba(1, 1, 255, 0.123);
+    border-radius: 0.25rem; /* Arredondamento das bordas */
+    transition: box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Estilo dos parágrafos dentro dos cards */
+.card p {
+    margin: 0px 0px; /* Remover margens */
+}
+
+/* Estilo do primeiro parágrafo */
+#modal-paragraph-1 {
+    /* Adicione estilos específicos para o primeiro parágrafo aqui */
+}
+
+/* Estilo do segundo parágrafo */
+#modal-paragraph-2 {
+    /* Adicione estilos específicos para o segundo parágrafo aqui */
+}
+
+/* Estilo do terceiro parágrafo */
+#modal-paragraph-3 {
+    /* Adicione estilos específicos para o terceiro parágrafo aqui */
+}
+
+/* Estilo do quarto parágrafo */
+#modal-paragraph-4 {
+    /* Adicione estilos específicos para o quarto parágrafo aqui */
+}
+
+/* Estilo do quinto parágrafo */
+#modal-paragraph-5 {
+    /* Adicione estilos específicos para o quinto parágrafo aqui */
+}
