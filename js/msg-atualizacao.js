@@ -102,7 +102,7 @@ function criarModal() {
           <div class="cards">
               <p class="card">* Adição da funcionalidade de adicionar e remover tarefas.</p>
               <p class="card">* Melhorias na interface para uma melhor experiência do usuário.</p>
-              <p class="card">*Correções de bugs e melhorias de desempenho.</p>
+              <p class="card">* Correções de bugs e melhorias de desempenho.</p>
           </div>
   
           <p id="modal-paragraph-4">Espero que aproveite essas novidades! Se tiver alguma dúvida ou feedback, por favor, não hesite em me contatar.</p>

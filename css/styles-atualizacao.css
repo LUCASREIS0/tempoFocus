@@ -128,7 +128,6 @@ close-modal:hover {
 .card {
     padding: 1rem 0rem; /* Espaçamento interno */
     margin: 0px;
-    box-shadow: 0px 5px 5px 0 rgba(1, 1, 255, 0.123);
     border-radius: 0.25rem; /* Arredondamento das bordas */
     transition: box-shadow 0.3s ease; /* Transição suave */
 }
@@ -136,29 +135,4 @@ close-modal:hover {
 /* Estilo dos parágrafos dentro dos cards */
 .card p {
     margin: 0px 0px; /* Remover margens */
-}
-
-/* Estilo do primeiro parágrafo */
-#modal-paragraph-1 {
-    /* Adicione estilos específicos para o primeiro parágrafo aqui */
-}
-
-/* Estilo do segundo parágrafo */
-#modal-paragraph-2 {
-    /* Adicione estilos específicos para o segundo parágrafo aqui */
-}
-
-/* Estilo do terceiro parágrafo */
-#modal-paragraph-3 {
-    /* Adicione estilos específicos para o terceiro parágrafo aqui */
-}
-
-/* Estilo do quarto parágrafo */
-#modal-paragraph-4 {
-    /* Adicione estilos específicos para o quarto parágrafo aqui */
-}
-
-/* Estilo do quinto parágrafo */
-#modal-paragraph-5 {
-    /* Adicione estilos específicos para o quinto parágrafo aqui */
 }
