@@ -69,7 +69,7 @@ close-modal:hover {
     transform: translate(-50%, -50%); /* Move o modal de volta metade de sua largura e altura para centralizá-lo */
     
     /* Dimensões */
-    width: 90%; /* Define a largura padrão do modal */
+    width: 75%; /* Define a largura padrão do modal */
     max-width: 90vw; /* Define a largura máxima do modal em relação à largura da tela */
     max-height: 90vh; /* Define a altura máxima do modal em relação à altura da tela */
     
