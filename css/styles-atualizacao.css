@@ -62,17 +62,29 @@ close-modal:hover {
 
 /* Estilo do modal em si */
 #modal {
-    position: fixed; /* Posicionamento fixo para centralizar */
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); /* Centralizando verticalmente e horizontalmente */
-    width: 700px; /* Largura fixa do modal */
-    max-width: 80%; /* Largura máxima para adaptabilidade */
+    /* Posicionamento */
+    position: fixed; /* Define a posição fixa para o modal */
+    left: 50%; /* Centraliza o modal horizontalmente */
+    top: 50%; /* Centraliza o modal verticalmente */
+    transform: translate(-50%, -50%); /* Move o modal de volta metade de sua largura e altura para centralizá-lo */
+    
+    /* Dimensões */
+    width: 90%; /* Define a largura padrão do modal */
+    max-width: 90vw; /* Define a largura máxima do modal em relação à largura da tela */
+    max-height: 90vh; /* Define a altura máxima do modal em relação à altura da tela */
+    
+    /* Comportamento de rolagem */
+    overflow-y: auto; /* Adiciona rolagem vertical ao modal quando necessário */
+    
+    /* Aparência */
     background-color: #fff; /* Cor de fundo do modal */
-    padding: 1.2rem;
-    border-radius: 0.5rem;
-    z-index: 10; /* Z-index superior ao fundo escuro */
+    padding: 1.2rem; /* Espaçamento interno do conteúdo do modal */
+    border-radius: 0.5rem; /* Raio do arredondamento das bordas do modal */
+    
+    /* Z-index para sobreposição */
+    z-index: 10; /* Z-index para sobreposição do modal */
 }
+
 
 /* Estilo dos parágrafos dentro do modal */
 #modal p {
